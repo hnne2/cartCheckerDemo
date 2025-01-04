@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Io.MainActivity">
+
+    <TextView
+        android:id="@+id/urlTextVIew"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:text="Url:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BankTextView" />
+
+    <TextView
+        android:id="@+id/phoneTextVIew"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:text="Phone:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/urlTextVIew" />
+
+    <TextView
+        android:id="@+id/cityTextView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:text="City:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countryTextView" />
+
+    <EditText
+        android:imeOptions="actionDone"
+        android:id="@+id/cartNumberEditTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TypeCartTextView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:text="Type:"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cartNumberEditTextText" />
+
+    <TextView
+        android:id="@+id/SchemeCartTextView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:text="Scheme / network:"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TypeCartTextView" />
+
+    <TextView
+        android:id="@+id/BankTextView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:text="Bank:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SchemeCartTextView" />
+
+    <TextView
+        android:id="@+id/countryTextView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:text="Country:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneTextVIew" />
+
+    <ImageButton
+        android:id="@+id/recentCallImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
